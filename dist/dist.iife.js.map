@@ -1,0 +1,18 @@
+{
+    "version": 3,
+    "file": "dist.iife.js",
+    "sources": [
+        "../module/a.js",
+        "../module/b.js",
+        "../module/c.js",
+        "../app.js"
+    ],
+    "sourcesContent": [
+        "function a(){\r\n    console.log(\"a\")\r\n}\r\n\r\nexport function aa(){\r\n    console.log(\"aa\")\r\n}\r\n\r\nexport default a;\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+        "function b(){\r\n    console.log(\"b\")\r\n}\r\n\r\nexport default b;",
+        "function c(){\r\n    let myDate = new Date();\r\n\r\n    let year = myDate.getFullYear();\r\n    let month = myDate.getMonth();\r\n    let day = myDate.getDate();\r\n\r\n    debugger;\r\n    let hh = myDate.getHours();\r\n    let mm = myDate.getMinutes();\r\n    let ss = myDate.getSeconds();\r\n\r\n    document.getElementById(\"box\").innerText = `${year}年${month + 1}月${day}日 ${hh}:${mm}:${ss}`;\r\n}\r\n\r\nexport default c;",
+        "/**\r\n * 入口文件\r\n */\r\n\r\nimport a from \"./module/a.js\"\r\nimport b from \"./module/b.js\"\r\nimport c from \"./module/c.js\"\r\n\r\na();\r\n\r\nb();\r\n\r\nconsole.log(c);\r\n\r\ndocument.getElementById(\"btn\").onclick = c;\r\n\r\nconsole.log(\"app.js\")\r\n\r\n"
+    ],
+    "names": [],
+    "mappings": ";;;IAAA,SAAS,CAAC,EAAE;IACZ,IAAI,OAAO,CAAC,GAAG,CAAC,GAAG,EAAC;IACpB;;ICFA,SAAS,CAAC,EAAE;IACZ,IAAI,OAAO,CAAC,GAAG,CAAC,GAAG,EAAC;IACpB;;ICFA,SAAS,CAAC,EAAE;IACZ,IAAI,IAAI,MAAM,GAAG,IAAI,IAAI,EAAE,CAAC;AAC5B;IACA,IAAI,IAAI,IAAI,GAAG,MAAM,CAAC,WAAW,EAAE,CAAC;IACpC,IAAI,IAAI,KAAK,GAAG,MAAM,CAAC,QAAQ,EAAE,CAAC;IAClC,IAAI,IAAI,GAAG,GAAG,MAAM,CAAC,OAAO,EAAE,CAAC;AAC/B;IACA,IAAI,SAAS;IACb,IAAI,IAAI,EAAE,GAAG,MAAM,CAAC,QAAQ,EAAE,CAAC;IAC/B,IAAI,IAAI,EAAE,GAAG,MAAM,CAAC,UAAU,EAAE,CAAC;IACjC,IAAI,IAAI,EAAE,GAAG,MAAM,CAAC,UAAU,EAAE,CAAC;AACjC;IACA,IAAI,QAAQ,CAAC,cAAc,CAAC,KAAK,CAAC,CAAC,SAAS,GAAG,CAAC,EAAE,IAAI,CAAC,CAAC,EAAE,KAAK,GAAG,CAAC,CAAC,CAAC,EAAE,GAAG,CAAC,EAAE,EAAE,EAAE,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,EAAE,EAAE,CAAC,CAAC,CAAC;IAChG;;ICbA;IACA;IACA;AACA;AAIA;IACA,CAAC,EAAE,CAAC;AACJ;IACA,CAAC,EAAE,CAAC;AACJ;IACA,OAAO,CAAC,GAAG,CAAC,CAAC,CAAC,CAAC;AACf;IACA,QAAQ,CAAC,cAAc,CAAC,KAAK,CAAC,CAAC,OAAO,GAAG,CAAC,CAAC;AAC3C;IACA,OAAO,CAAC,GAAG,CAAC,QAAQ;;;;;;"
+}
