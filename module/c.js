@@ -5,7 +5,6 @@ function c(){
     let month = myDate.getMonth();
     let day = myDate.getDate();
 
-    debugger;
     let hh = myDate.getHours();
     let mm = myDate.getMinutes();
     let ss = myDate.getSeconds();

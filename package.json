@@ -4,6 +4,7 @@
   "description": "rollup demo",
   "main": "app.js",
   "scripts": {
+    "build": "rollup -c",
     "build:amd": "rollup app.js -f amd -o ./dist/dist.amd.js",
     "build:cjs": "rollup app.js -f cjs -o ./dist/dist.cjs.js",
     "build:es": "rollup app.js -f es -o ./dist/dist.es.js",
@@ -23,6 +24,6 @@
   },
   "homepage": "https://github.com/caichunbao/rollup#readme",
   "devDependencies": {
-    "rollup-plugin-terser": "^7.0.2"
+    "@rollup/plugin-terser": "^0.4.3"
   }
 }
